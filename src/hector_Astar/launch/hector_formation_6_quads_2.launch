@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+  
+  <node pkg ="hector_Astar" name = "position_controller" type = "position_controller_source.py" output = "screen"/>
+  <node pkg ="hector_Astar" name = "Trajectory_ref" type = "Trajectory_ref_source.py" output = "screen"/>
+
+</launch>
