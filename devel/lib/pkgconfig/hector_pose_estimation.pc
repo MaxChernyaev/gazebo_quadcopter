@@ -1,0 +1,8 @@
+prefix=/home/max/hector_quadrotor_tutorial/devel
+
+Name: hector_pose_estimation
+Description: Description of hector_pose_estimation
+Version: 0.3.0
+Cflags: -I/home/max/hector_quadrotor_tutorial/src/hector_localization/hector_pose_estimation/include
+Libs: -L/home/max/hector_quadrotor_tutorial/devel/lib -lhector_pose_estimation_nodelet -lhector_pose_estimation_node
+Requires: hector_pose_estimation_core nodelet sensor_msgs geometry_msgs nav_msgs tf message_filters

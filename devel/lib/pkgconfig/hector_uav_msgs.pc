@@ -1,0 +1,8 @@
+prefix=/home/max/hector_quadrotor_tutorial/devel
+
+Name: hector_uav_msgs
+Description: Description of hector_uav_msgs
+Version: 0.3.5
+Cflags: -I/home/max/hector_quadrotor_tutorial/devel/include -I/home/max/hector_quadrotor_tutorial/src/hector_quadrotor/hector_uav_msgs/include
+Libs: -L/home/max/hector_quadrotor_tutorial/devel/lib 
+Requires: message_runtime std_msgs

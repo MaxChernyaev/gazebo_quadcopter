@@ -1,0 +1,8 @@
+prefix=/home/max/hector_quadrotor_tutorial/install
+
+Name: hector_quadrotor_controllers
+Description: Description of hector_quadrotor_controllers
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/max/hector_quadrotor_tutorial/install/lib -lhector_quadrotor_controllers
+Requires: roscpp

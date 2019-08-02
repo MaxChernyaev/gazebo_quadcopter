@@ -1,0 +1,8 @@
+prefix=/home/max/hector_quadrotor_tutorial/devel
+
+Name: hector_pose_estimation_core
+Description: Description of hector_pose_estimation_core
+Version: 0.3.0
+Cflags: -I/home/max/hector_quadrotor_tutorial/src/hector_localization/hector_pose_estimation_core/include -I/home/max/hector_quadrotor_tutorial/devel/include -I/usr/include/eigen3
+Libs: -L/home/max/hector_quadrotor_tutorial/devel/lib -lhector_pose_estimation
+Requires: rostime rosconsole roscpp sensor_msgs geometry_msgs nav_msgs geographic_msgs tf

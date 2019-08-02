@@ -1,0 +1,154 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ac0d6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ac0d6.dir/build.make CMakeFiles/cmTC_ac0d6.dir/build
+make[1]: вход в каталог «/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_ac0d6.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_ac0d6.dir/CheckSymbolExists.c.o   -c /home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ac0d6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac0d6.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_ac0d6.dir/CheckSymbolExists.c.o  -o cmTC_ac0d6 -rdynamic 
+CMakeFiles/cmTC_ac0d6.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ac0d6.dir/build.make:97: ошибка выполнения рецепта для цели «cmTC_ac0d6»
+make[1]: *** [cmTC_ac0d6] Ошибка 1
+make[1]: выход из каталога «/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_ac0d6/fast»
+make: *** [cmTC_ac0d6/fast] Ошибка 2
+
+File /home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7f6f7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7f6f7.dir/build.make CMakeFiles/cmTC_7f6f7.dir/build
+make[1]: вход в каталог «/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_7f6f7.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_7f6f7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7f6f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f6f7.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_7f6f7.dir/CheckFunctionExists.c.o  -o cmTC_7f6f7 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7f6f7.dir/build.make:97: ошибка выполнения рецепта для цели «cmTC_7f6f7»
+make[1]: *** [cmTC_7f6f7] Ошибка 1
+make[1]: выход из каталога «/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_7f6f7/fast»
+make: *** [cmTC_7f6f7/fast] Ошибка 2
+
+
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a95cd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a95cd.dir/build.make CMakeFiles/cmTC_a95cd.dir/build
+make[1]: вход в каталог «/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_a95cd.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4   -o CMakeFiles/cmTC_a95cd.dir/CheckSymbolExists.cxx.o -c /home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^
+CMakeFiles/cmTC_a95cd.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_a95cd.dir/CheckSymbolExists.cxx.o»
+make[1]: *** [CMakeFiles/cmTC_a95cd.dir/CheckSymbolExists.cxx.o] Ошибка 1
+make[1]: выход из каталога «/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_a95cd/fast»
+make: *** [cmTC_a95cd/fast] Ошибка 2
+
+File /home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5b2e7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5b2e7.dir/build.make CMakeFiles/cmTC_5b2e7.dir/build
+make[1]: вход в каталог «/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_5b2e7.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4   -o CMakeFiles/cmTC_5b2e7.dir/CheckSymbolExists.cxx.o -c /home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^
+CMakeFiles/cmTC_5b2e7.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_5b2e7.dir/CheckSymbolExists.cxx.o»
+make[1]: *** [CMakeFiles/cmTC_5b2e7.dir/CheckSymbolExists.cxx.o] Ошибка 1
+make[1]: выход из каталога «/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_5b2e7/fast»
+make: *** [cmTC_5b2e7/fast] Ошибка 2
+
+File /home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_94c08/fast"
+/usr/bin/make -f CMakeFiles/cmTC_94c08.dir/build.make CMakeFiles/cmTC_94c08.dir/build
+make[1]: вход в каталог «/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_94c08.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4   -o CMakeFiles/cmTC_94c08.dir/CheckSymbolExists.cxx.o -c /home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^
+CMakeFiles/cmTC_94c08.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_94c08.dir/CheckSymbolExists.cxx.o»
+make[1]: *** [CMakeFiles/cmTC_94c08.dir/CheckSymbolExists.cxx.o] Ошибка 1
+make[1]: выход из каталога «/home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_94c08/fast»
+make: *** [cmTC_94c08/fast] Ошибка 2
+
+File /home/max/hector_quadrotor_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

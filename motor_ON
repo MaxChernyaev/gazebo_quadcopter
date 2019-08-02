@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo -n "Введите количество роботов в симуляции: "
+
+read item
+
+for (( i=1; i <= item; i++ ))
+do
+rosservice call /quad$i/enable_motors "enable: true"
+done

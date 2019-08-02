@@ -1,0 +1,8 @@
+prefix=/home/max/hector_quadrotor_tutorial/devel
+
+Name: message_to_tf
+Description: Description of message_to_tf
+Version: 0.3.0
+Cflags: 
+Libs: -L/home/max/hector_quadrotor_tutorial/devel/lib 
+Requires: tf nav_msgs geometry_msgs sensor_msgs topic_tools

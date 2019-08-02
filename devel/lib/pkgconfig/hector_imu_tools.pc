@@ -1,0 +1,8 @@
+prefix=/home/max/hector_quadrotor_tutorial/devel
+
+Name: hector_imu_tools
+Description: Description of hector_imu_tools
+Version: 0.3.5
+Cflags: 
+Libs: -L/home/max/hector_quadrotor_tutorial/devel/lib 
+Requires: 

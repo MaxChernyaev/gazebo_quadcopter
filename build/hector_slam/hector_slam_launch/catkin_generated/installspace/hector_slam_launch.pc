@@ -1,0 +1,8 @@
+prefix=/home/max/hector_quadrotor_tutorial/install
+
+Name: hector_slam_launch
+Description: Description of hector_slam_launch
+Version: 0.3.5
+Cflags: 
+Libs: -L/home/max/hector_quadrotor_tutorial/install/lib 
+Requires: 

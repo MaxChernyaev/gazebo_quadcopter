@@ -1,0 +1,8 @@
+prefix=/home/max/hector_quadrotor_tutorial/install
+
+Name: hector_gazebo_thermal_camera
+Description: Description of hector_gazebo_thermal_camera
+Version: 0.5.1
+Cflags: -I/home/max/hector_quadrotor_tutorial/install/include
+Libs: -L/home/max/hector_quadrotor_tutorial/install/lib 
+Requires: gazebo_plugins

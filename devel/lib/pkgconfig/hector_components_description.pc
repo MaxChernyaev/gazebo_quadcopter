@@ -1,0 +1,8 @@
+prefix=/home/max/hector_quadrotor_tutorial/devel
+
+Name: hector_components_description
+Description: Description of hector_components_description
+Version: 0.5.0
+Cflags: 
+Libs: -L/home/max/hector_quadrotor_tutorial/devel/lib 
+Requires: 
